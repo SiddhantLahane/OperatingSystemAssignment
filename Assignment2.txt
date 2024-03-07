@@ -1,0 +1,167 @@
+siddhant@LAPTOP-FP127C1P:~$ pwd
+/home/siddhant
+siddhant@LAPTOP-FP127C1P:~$ ls
+Grandfather  LinuxAssignment  demo.sh  prac.sh  practice  snap  task
+siddhant@LAPTOP-FP127C1P:~$ cd practice
+siddhant@LAPTOP-FP127C1P:~/practice$ ls
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > data.txt
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+twelve
+thirteen
+siddhant@LAPTOP-FP127C1P:~/practice$ head -10 data.txt
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+siddhant@LAPTOP-FP127C1P:~/practice$ tail -5 data.txt
+nine
+ten
+eleven
+twelve
+thirteen
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > numbers.txt
+11
+22
+33
+44
+55
+
+
+siddhant@LAPTOP-FP127C1P:~/practice$ crm -r numbers.txt
+Command 'crm' not found, but can be installed with:
+sudo apt install crmsh   # version 4.3.1-1ubuntu3, or
+sudo apt install crm114  # version 20100106-10
+siddhant@LAPTOP-FP127C1P:~/practice$ rm -r numbers.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > numbers.txt
+11
+22
+33
+44
+55
+66
+77
+88
+99
+111
+222
+333
+444
+555
+666
+siddhant@LAPTOP-FP127C1P:~/practice$ head -15 numbers.txt
+11
+22
+33
+44
+55
+66
+77
+88
+99
+111
+222
+333
+444
+555
+666
+siddhant@LAPTOP-FP127C1P:~/practice$ tail -3 numbers.txt
+444
+555
+666
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > input.txt
+this is a file here
+siddhant@LAPTOP-FP127C1P:~/practice$ cat input.txt | tr ["a-b"] ["A-B"]
+this is A file here
+siddhant@LAPTOP-FP127C1P:~/practice$ cat input.txt | tr "[:lower:]" "[:upper:]"
+THIS IS A FILE HERE
+siddhant@LAPTOP-FP127C1P:~/practice$ cp input.txt uppercase.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ cat uppercase.txt
+this is a file here
+siddhant@LAPTOP-FP127C1P:~/practice$ cat input.txt
+this is a file here
+siddhant@LAPTOP-FP127C1P:~/practice$ cat input.txt | tr "[:lower:]" "[:upper:]"
+THIS IS A FILE HERE
+siddhant@LAPTOP-FP127C1P:~/practice$ tr '[:lower:]' '[:upper:]' < input.txt > output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ ls
+data.txt  input.txt  numbers.txt  output.txt  uppercase.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ cat output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ rm -r output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ ls
+data.txt  input.txt  numbers.txt  uppercase.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ rm -r uppercase.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ ls
+data.txt  input.txt  numbers.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ tr '[:lower:]' '[:upper:]' < input.txt > output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ ls
+data.txt  input.txt  numbers.txt  output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ cat output.txt
+THIS IS A FILE HERE
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > duplicate.txt
+apple
+orange
+apple
+mango
+grapes
+mango
+sugar
+banana
+siddhant@LAPTOP-FP127C1P:~/practice$ sort duplicate.txt | uniq
+apple
+banana
+grapes
+mango
+orange
+sugar
+siddhant@LAPTOP-FP127C1P:~/practice$ ls
+data.txt  duplicate.txt  input.txt  numbers.txt  output.txt
+siddhant@LAPTOP-FP127C1P:~/practice$ sort duplicate.txt | uniq
+apple
+banana
+grapes
+mango
+orange
+sugar
+siddhant@LAPTOP-FP127C1P:~/practice$ cat > fruit.txt
+mango
+apple
+oranges
+strawberry
+apple
+oranges
+oranges
+apple
+banana
+siddhant@LAPTOP-FP127C1P:~/practice$ sort fruit.txt | uniq -c
+      3 apple
+      1 banana
+      1 mango
+      3 oranges
+      1 strawberry
+siddhant@LAPTOP-FP127C1P:~/practice$ tree
+.
+├── data.txt
+├── duplicate.txt
+├── fruit.txt
+├── input.txt
+├── numbers.txt
+└── output.txt
+
+0 directories, 6 files
+siddhant@LAPTOP-FP127C1P:~/practice$
