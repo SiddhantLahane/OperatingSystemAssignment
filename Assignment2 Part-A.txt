@@ -1,0 +1,70 @@
+What will the following commands do? 
+
+ echo "Hello, World!" 
+it will print the hello, World in the terminal
+
+ name="Productive" 
+it will store the productive in the name
+
+ touch file.txt 
+it will create a new file named file.txt
+
+ ls -a 
+it will list all the files including the hidden files
+
+ rm file.txt 
+it will delete the file file.txt
+
+ cp file1.txt file2.txt 
+it will create new file name file2.txt and copy the content of file1.txt
+
+ mv file.txt /path/to/directory/ 
+it will move the file.txt to the directory
+
+ chmod 755 script.sh 
+it will give permission of script.sh and the permissions are for owner its rwx then to the group rx and same to the other user
+
+ grep "pattern" file.txt 
+the grep command will search for the pattern in file.txt
+
+ kill PID 
+this command specifies the process ID of the process to be killed
+
+ mkdir mydir && cd mydir && touch file.txt && echo "Hello, World!" > file.txt && cat file.txt 
+it will first create a directory name mydir then make it current directory then create a file name file.txt then will write "Hello, World!" in it then will show it in terminal.
+
+ ls -l | grep ".txt" 
+this command will list all files in the current directory that have the .txt extension.
+
+ cat file1.txt file2.txt | sort | uniq 
+this will sort whatever is written in the file1.txt and file2.txt and will remove duplicates and then it will show it in terminal
+
+ ls -l | grep "^d" 
+ls -l will list all the files and grep "^d" will show the lines starting with d 
+
+ grep -r "pattern" /path/to/directory/ 
+the grep -r command will search through subdirectories for the pattern
+
+ cat file1.txt file2.txt | sort | uniq –d 
+the cat command will conatenate the contents of file1.txt and file2.txt then sort the lines alphabetically and uniq -d will output duplicate lines after filtering out the adjacent duplicate.
+
+ chmod 644 file.txt 
+this is giving permission to the owner of rw and to the group of read only and same for the other users as well.
+
+ cp -r source_directory destination_directory 
+after running this command the content of the source directory including subdirectories and files will be copied to destination directory and if destination directory does not exist then it will be created.
+
+ find /path/to/search -name "*.txt" 
+this command will search within the specified directory for the files having extension of .txt
+
+ chmod u+x file.txt 
+this command will give execute permission to the user
+
+ echo $PATH 
+this will print the value PATH is having
+
+
+
+
+
+
